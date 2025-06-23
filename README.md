@@ -10,8 +10,8 @@ A lightweight .NET 8 Web API project for managing hospital appointments using **
 
 1. **Clone the project**  
    ```bash
-   git clone https://github.com/your-username/hospital-appointments-api.git
-   cd hospital-appointments-api
+   git clone https://github.com/Seema2211/HospitalManagmentAPI.git
+   cd HospitalManagmentAPI
 
 
 
