@@ -1,31 +1,23 @@
-
 # 🏥 Hospital Appointment Management API (In-Memory)
 
-A lightweight .NET 8 Web API project for managing hospital appointments using **in-memory storage**. The architecture follows **SOLID principles** and applies the **Repository** and **Service** design patterns.
-
-
-
+ A lightweight .NET 8 Web API project for managing hospital appointments using **in-memory storage**. The architecture follows **SOLID principles** and applies the **Repository** and **Service** design patterns.
 
 ## 🚀 How to Run
 
 1. **Clone the project**  
-   ```bash
-   git clone https://github.com/Seema2211/HospitalManagmentAPI.git
-   cd HospitalManagmentAPI
-
-
-
+```bash
+git clone https://github.com/Seema2211/HospitalManagmentAPI.git
+cd HospitalManagmentAPI
+```
 
 2.  Run the API
-
+```bash
 dotnet run
-
+```
 
 3. Test the API
 
 https://localhost:5001/swagger
-
-
 
 | Method | Endpoint              | Description              |
 | ------ | --------------------- | ------------------------ |
@@ -36,20 +28,14 @@ https://localhost:5001/swagger
 | DELETE | `/api/appointments/1` | Delete an appointment    |
 
 
-
-
----
-
 ## 📁 Project Structure
-
+```bash
 /Controllers → API endpoints
 /Services → Business logic (AppointmentService)
 /Repositories → In-memory data access layer
 /Models → Data model (Appointment)
 Program.cs → App configuration and DI setup
-
-
----
+```
 
 ## ✅ Features
 
@@ -59,21 +45,7 @@ Program.cs → App configuration and DI setup
 - 🧠 Clean code using **SOLID** principles
 - 💾 No database needed — runs entirely in-memory
 
----
-
-
-❌ Overlapping Logic
-An appointment is not allowed if the same doctor already has an appointment that overlaps:
-
-
-// Overlap condition in service layer
-a.DoctorName == appt.DoctorName &&
-a.StartDate < appt.EndDate &&
-appt.StartDate < a.EndDate
-
-
-
-🧪 Future Enhancements
+## 🧪 Future Enhancements
 Add FluentValidation for richer validation
 
 Use DTOs to separate API and domain models
